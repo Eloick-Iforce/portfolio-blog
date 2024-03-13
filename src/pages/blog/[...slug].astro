@@ -16,5 +16,81 @@ const { Content } = await post.render();
 ---
 
 <BlogPost {...post.data}>
+	<div class="markdown">
 	<Content />
+</div>
 </BlogPost>
+
+<style scoped="true">
+	.markdown {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		font-size: 1.25rem;
+		margin-top: 1rem;
+	}
+
+	.markdown h1 {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	.markdown h2 {
+		font-size: 1.5rem;
+	}
+
+	.markdown h3 {
+		font-size: 1.25rem;
+	}
+
+	.markdown p {
+		line-height: 1.5;
+	}
+
+	.markdown a {
+		color: #0070f3;
+	}
+
+	.markdown a:hover {
+		color: #0366d6;
+	}
+
+	.markdown table {
+		width: 100%;
+		border-collapse: collapse;
+		border: #2d353f 1px solid;
+		text-align: left;
+	}
+
+	.markdown th,
+	.markdown td {
+		border: #2d353f 1px solid;
+		padding: 0.5rem;
+	}
+
+	.markdown ul {
+		padding-left: 1.5rem;
+		list-style: disc;
+	}
+
+	.markdown ol {
+		padding-left: 1.5rem;
+		list-style: decimal;
+	}
+
+	.markdown li {
+		line-height: 1.5;
+	}
+
+	.markdown code{
+		background-color: #24292e;
+		padding: 0.2rem;
+  		color: #e1e4e8;
+  		overflow-x: hidden;
+	}
+
+
+
+
+	
+	</style>
