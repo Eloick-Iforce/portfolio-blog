@@ -21,7 +21,7 @@ const { Content } = await post.render();
 </div>
 </BlogPost>
 
-<style scoped="true">
+<style is:global>
 	.markdown {
 		display: flex;
 		flex-direction: column;
@@ -31,16 +31,20 @@ const { Content } = await post.render();
 	}
 
 	.markdown h1 {
-		font-size: 2rem;
+		font-size: 4rem;
 		font-weight: bold;
 	}
 
 	.markdown h2 {
-		font-size: 1.5rem;
+		font-size: 2.5rem;
 	}
 
 	.markdown h3 {
-		font-size: 1.25rem;
+		font-size: 2rem;
+	}
+
+	.markdown h4 {
+		font-size: 1.5rem;
 	}
 
 	.markdown p {
